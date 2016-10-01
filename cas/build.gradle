@@ -11,6 +11,12 @@ dependencies {
     runtime("org.apereo.cas:cas-server-webapp:${project.'cas.version'}@war") {
         transitive = true
     }
+    runtime("org.apereo.cas:cas-server-support-gauth:${project.'cas.version'}") {
+        transitive = true
+    }
+    runtime("org.apereo.cas:cas-server-support-json-service-registry:${project.'cas.version'}") {
+        transitive = true
+    }
 }
 
 task copyConfig(type: Copy) {
