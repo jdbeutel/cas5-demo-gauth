@@ -48,15 +48,14 @@ $ ./gradlew clean build
 Test
 ====
 
-* run the embedded Tomcat:  ```java -jar cas/build/libs/cas.war```
-* navigate browser to this URL:
- ```https://localhost:8443/cas/login?service=https%3A%2F%2Fwww.apereo.org&authn_method=mfa-gauth```
+* run the embedded Tomcat:  `java -jar cas/build/libs/cas.war`
+* navigate browser to this URL: https://localhost:8443/cas/login?service=https%3A%2F%2Fwww.apereo.org&authn_method=mfa-gauth
 * login w/
     * username: casuser
     * password: Mellon
 * If this is the first time that casuser has logged in since Tomcat has restarted,
 then a page like the following is shown:
-
+```
     Your account is not registered.
     Use the below settings to register your device with CAS.
     
@@ -73,6 +72,7 @@ then a page like the following is shown:
     * 81434539
     
     [REGISTER]
+```
 * add QR code to my Android phone's Google Authenticator app via 'Scan a barcode'
 * see "UHi (UHl:casuser)" added to my Google Authenticator
 * click the [REGISTER] button
